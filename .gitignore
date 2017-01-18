@@ -29,7 +29,7 @@ hs_err_pid*
 .idea/dynamic.xml
 .idea/uiDesigner.xml
 .idea/workspace.xml
-*/.idea/
+/.idea/*
 
 # Gradle:
 .idea/gradle.xml
