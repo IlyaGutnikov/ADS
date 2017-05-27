@@ -13,11 +13,13 @@ public class Main {
         queue.insert(40);
         queue.insert(50);
 
-        System.out.println(queue.remove());
-        System.out.println(queue.remove());
-        System.out.println(queue.remove());
+        PriorityQueue priorityQueue = new PriorityQueue(5);
+        priorityQueue.insert(30);
+        priorityQueue.insert(50);
+        priorityQueue.insert(10);
+        priorityQueue.insert(40);
+        priorityQueue.insert(70);
 
-
-
+        System.out.println(priorityQueue.remove());
     }
 }
