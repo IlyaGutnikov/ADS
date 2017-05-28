@@ -29,6 +29,49 @@ public class LinkList {
         return temp;
     }
 
+    public Link find(int _key) {
+
+        if (this.isEmpty()) {
+            return null;
+        }
+
+        Link current = first;
+        while (current.key != _key) {
+
+            if (current.next == null) {
+                return null;
+            } else {
+                current = current.next;
+            }
+        }
+
+        return current;
+    }
+
+    public Link delete(int _key) {
+
+        Link current = first;
+        Link previous = first;
+
+        while (current.key != _key) {
+
+            if (current.next == null) {
+                return null;
+            } else {
+                previous = current;
+                current = current.next;
+            }
+        }
+
+        if (current == first) {
+            first = first.next;
+        } else {
+            previous.next = current.next;
+        }
+
+        return current;
+    }
+
     @Override
     public String toString() {
 

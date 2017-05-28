@@ -10,5 +10,9 @@ public class Main {
         linkList.insertFirst(44, 4);
 
         System.out.println(linkList.toString());
+
+        linkList.delete(22);
+
+        System.out.println(linkList.toString());
     }
 }
