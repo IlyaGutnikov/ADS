@@ -14,5 +14,17 @@ public class Main {
         linkList.delete(22);
 
         System.out.println(linkList.toString());
+
+        ///
+        FirstLastLink firstLastLink = new FirstLastLink();
+        firstLastLink.insertFirst(55, 5);
+        firstLastLink.insertFirst(66, 6);
+        firstLastLink.insertFirst(77, 7);
+
+        System.out.println(firstLastLink.toString());
+
+        firstLastLink.insertLast(88,8);
+
+        System.out.println(firstLastLink.toString());
     }
 }
