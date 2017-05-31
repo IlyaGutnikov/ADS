@@ -11,6 +11,11 @@ public class Link {
         data = _data;
     }
 
+    public Link() {
+
+        data = -555;
+    }
+
     @Override
     public String toString() {
 

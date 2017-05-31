@@ -14,5 +14,14 @@ public class Main {
 
         System.out.println(sortedList.toString());
 
+        ///
+
+        DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
+        doublyLinkedList.inserLast(20);
+        doublyLinkedList.insertFirst(30);
+        doublyLinkedList.insertFirst(40);
+        System.out.println(doublyLinkedList.toString());
+
+
     }
 }
