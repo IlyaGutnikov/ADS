@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        items = new int[]{11, 8, 7, 6, 5};
+        items = new int[]{11, 8, 7, 6, 5, 1};
 
         fillBackPack(targetWeight, currentStartItem);
     }
@@ -21,7 +21,7 @@ public class Main {
 
         if (_itemPos > items.length-1) {
 
-            noItems();
+            noItemsCheck();
         }
 
         if (items[_itemPos] == _targetWeight) {
@@ -47,7 +47,7 @@ public class Main {
 
             if (_itemPos == (items.length-1)) {
 
-                noItems();
+                noItemsCheck();
 
             } else {
 
@@ -64,7 +64,7 @@ public class Main {
         }
     }
 
-    private static void noItems() {
+    private static void noItemsCheck() {
 
         System.out.println("No more items");
         currentStartItem = currentStartItem + 1;
