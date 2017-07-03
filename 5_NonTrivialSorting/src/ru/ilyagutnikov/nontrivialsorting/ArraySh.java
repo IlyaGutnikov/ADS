@@ -1,4 +1,4 @@
-package ru.ilyagutnikov.patterns;
+package ru.ilyagutnikov.nontrivialsorting;
 
 /**
  * Created by IlyaGutnikov on 03.07.2017.
