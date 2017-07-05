@@ -51,5 +51,19 @@ public class Main {
         arrayIns.quickSort();
         arrayIns.display();
 
+        //Quick sort2
+        System.out.println("Quick sort 2");
+        ArrayInsMediana arrayInsMediana = new ArrayInsMediana(maxSize);
+
+        for (int j=0; j<maxSize; j++) {
+
+            long n = (int)(java.lang.Math.random() * 999);
+            arrayInsMediana.insert(n);
+        }
+
+        arrayInsMediana.display();
+        arrayInsMediana.quickSort();
+        arrayInsMediana.display();
+
     }
 }
